@@ -3,14 +3,14 @@ import { AnimatedCard } from "./ProjectCard/AnimatedCard"
 import clsx from "clsx"
 import { useOffset } from "../hooks/useOffset"
 import { useIsMobile } from "../hooks/useMediaQuery"
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useMemo } from "react"
 import { useScroll, useSpring } from "motion/react"
 import { useUI } from "@react-zero-ui/core"
 import { myProjects } from "@/app/data/portfolio-content"
 
 export function ProjectsGrid({ className }: { className?: string }) {
   const ref = useRef<HTMLDivElement>(null)
-  const ids = myProjects.map(p => p.id)
+  const ids = useMemo(() => myProjects.map((p) => p.id), [])
   const rawOffsets = useOffset(ids)
   const isMobile = useIsMobile()
   const isSmallScreen = useIsMobile(576)

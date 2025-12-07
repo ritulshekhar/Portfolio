@@ -2,7 +2,7 @@ import Image from "next/image"
 import { H3, Text } from "@/app/ui/Elements"
 import { MotionDiv } from "@/app/utils/lazy-ui"
 import { Icon } from "./Icon"
-import profilePhoto from "@/app/images/profile.webp"
+import profilePhoto from "@/public/assets/ritul-shekhar-headshot.jpg"
 import { SITE_NAP } from "@/config/siteConfig"
 import { Mail } from "@react-zero-ui/icon-sprite"
 import { BlackButtonLink } from "./ui/BlackButtonLink"
@@ -21,11 +21,11 @@ export const RecruiterContact: React.FC = () => {
         >
           <div className="flex w-fit items-center gap-3 p-2 max-lg:justify-center">
             <div className="relative h-12 w-12 overflow-hidden rounded-full ring-4 ring-slate-200">
-              <Image src={profilePhoto} alt="Austin Serb" fill sizes="80px" className="object-cover" />
+              <Image src={profilePhoto} alt="Ritul Shekhar" fill sizes="80px" className="object-cover" />
             </div>
             <div className="flex flex-col items-start text-sm whitespace-nowrap text-slate-700">
-              <h2 className="font-medium text-slate-900">Austin Serb</h2>
-              <p className="text-slate-500">Full-Stack - Frontend Focused</p>
+              <h2 className="font-medium text-slate-900">Ritul Shekhar</h2>
+              <p className="text-slate-500">AI/ML & Data Science Developer</p>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ export const RecruiterContact: React.FC = () => {
           </div>
 
           {/* <div className="flex items-center gap-3 opacity-70 max-lg:justify-center  ">
-            <WhiteButtonLink href={"https://cal.com/austinserb/intro"} className="relative">
+            <WhiteButtonLink href={"#contact"} className="relative">
               <Icon name="calendar" height={18} width={18} className="h-[18px] w-[18px] text-slate-700 " />
               Book a call
               <CalIcon className="h-auto w-20 text-gray-900 absolute -right-24" />

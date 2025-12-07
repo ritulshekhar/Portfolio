@@ -2,6 +2,11 @@ import { StaticImageData } from "next/image"
 import iaoPreview from "@/app/images/iao-preview-v2.webp"
 import bespokePreview from "@/app/images/bespoke-preview-v2.webp"
 import automedicsPreview from "@/app/images/automedics-preview-v2.webp"
+import complianceAiPreview from "@/public/assets/compliance-ai-preview-v2.jpg"
+import marketResearchPreview from "@/public/assets/market-research-dashboard.png"
+import cloudFeedbackPreview from "@/public/assets/cloud-feedback-platform-v2.jpg"
+import stockForecastingPreview from "@/public/assets/stock-forecasting.png"
+import crimeDetectionPreview from "@/public/assets/crime-detection.jpg"
 import reactZeroUIPreview from "@/app/images/react-zero-ui-preview.jpg"
 
 // Reusing existing images as placeholders
@@ -49,7 +54,7 @@ export const myProjects: ProjectItem[] = [
         techStack: "Python, BeautifulSoup, Flask, MySQL, Power BI",
         type: "Data Analytics",
         color: "#DA961A",
-        image: images[2],
+        image: marketResearchPreview,
         href: "", // Insert GitHub Link Here
         dataText: "View on GitHub"
     },
@@ -60,7 +65,7 @@ export const myProjects: ProjectItem[] = [
         techStack: "Python, LangChain, Streamlit, OpenAI API, MongoDB",
         type: "GenAI & NLP",
         color: "#13739C",
-        image: images[3],
+        image: complianceAiPreview,
         href: "", // Insert GitHub Link Here
         dataText: "View on GitHub"
     },
@@ -71,7 +76,7 @@ export const myProjects: ProjectItem[] = [
         techStack: "Python, AWS Lambda, Node.js, MongoDB, Scikit-learn",
         type: "Cloud & Analytics",
         color: "#3B06D1",
-        image: images[0],
+        image: cloudFeedbackPreview,
         href: "", // Insert GitHub Link Here
         dataText: "View on GitHub"
     },
@@ -82,7 +87,7 @@ export const myProjects: ProjectItem[] = [
         techStack: "Python, TensorFlow, Prophet, Scikit-learn, Pandas",
         type: "Financial AI",
         color: "#024EFC",
-        image: images[1],
+        image: stockForecastingPreview,
         href: "", // Insert GitHub Link Here
         dataText: "View on GitHub"
     },
@@ -93,7 +98,7 @@ export const myProjects: ProjectItem[] = [
         techStack: "YOLOv8, Python, Flask, React.js, PyTorch, MongoDB",
         type: "Computer Vision",
         color: "#DA961A",
-        image: images[2],
+        image: crimeDetectionPreview,
         href: "", // Insert GitHub Link Here
         dataText: "View on GitHub"
     }

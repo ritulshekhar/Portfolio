@@ -15,7 +15,7 @@ export const REVIEWS = [
     name: "Yassine Ramani",
     title: "CEO, Entitled",
     quote:
-      "Austin's technical leadership transformed our development process. His implementation of React Zero UI improved our UI performance by 10x, and his mentorship helped level up our entire frontend team. He combines deep technical expertise with the rare ability to communicate complex concepts clearly.",
+      "Ritul's technical leadership transformed our development process. His implementation of React Zero UI improved our UI performance by 10x, and his mentorship helped level up our entire frontend team. He combines deep technical expertise with the rare ability to communicate complex concepts clearly.",
   },
   {
     id: "herba-naturals",
@@ -23,7 +23,7 @@ export const REVIEWS = [
     name: "Sami Raheem",
     title: "Owner, Herba Naturals",
     quote:
-      "At the time, Austin was working solo, yet he delivered an e-commerce website that exceeded all our expectations. It was fast, user-friendly, and packed with features like automated shipping labels and AI-powered product management. Finding a Seattle web design company that goes beyond the basics is rare-Austin delivered in every way.",
+      "At the time, Ritul was working solo, yet he delivered an e-commerce website that exceeded all our expectations. It was fast, user-friendly, and packed with features like automated shipping labels and AI-powered product management. Finding a Seattle web design company that goes beyond the basics is rare—Ritul delivered in every way.",
   },
   {
     id: "vets-choice",
@@ -31,7 +31,7 @@ export const REVIEWS = [
     name: "Rob Dow",
     title: "Co-Founder, Vets Choice Insurance",
     quote:
-      "The aftercare is unbeatable. Being an insurance company, we had to go through many rounds of revisions to comply with our legal requirements. Austin was always available to help and make sure we were happy with the final product. I highly recommend them for any web design needs.",
+      "The aftercare is unbeatable. Being an insurance company, we had to go through many rounds of revisions to comply with our legal requirements. Ritul was always available to help and make sure we were happy with the final product. I highly recommend them for any web design needs.",
   },
   {
     id: "bespoke",
@@ -39,7 +39,7 @@ export const REVIEWS = [
     name: "Kris Meyer",
     title: "Owner, Bespoke Tint",
     quote:
-      "Austin took our vision and built a website that makes our business look as professional online as it is in person. We've already seen a huge increase in calls and bookings. Couldn't recommend Austin enough.",
+      "Ritul took our vision and built a website that makes our business look as professional online as it is in person. We've already seen a huge increase in calls and bookings. Couldn't recommend Ritul enough.",
   },
   {
     id: "iao",
@@ -47,14 +47,14 @@ export const REVIEWS = [
     name: "Aleks Butokowitz",
     title: "CEO, Iron & Oak",
     quote:
-      "Working with Austin felt like working with an in-house team. They took the time to understand our mission and goals, delivering a site that perfectly blended branding and design with seamless functionality. Their expertise as a web design agency was evident in every detail, from performance to aesthetics.",
+      "Working with Ritul felt like working with an in-house team. They took the time to understand our mission and goals, delivering a site that perfectly blended branding and design with seamless functionality. Their expertise as a web design agency was evident in every detail, from performance to aesthetics.",
   },
 
   {
     id: "automedics",
     name: "Jeff Egbert",
     title: "Owner, Automedics Kirkland",
-    quote: "Austin built our website fast and it works flawlessly. He is always available to answer questions or solve problems. Great experience.",
+    quote: "Ritul built our website fast and it works flawlessly. He is always available to answer questions or solve problems. Great experience.",
     img: "/assets/automedics-logo-optimized.png",
   },
 ] as const satisfies readonly ReviewProps[]

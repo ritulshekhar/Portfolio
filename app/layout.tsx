@@ -28,10 +28,14 @@ export const metadata: Metadata = {
   title: SITE_CONFIG.title,
   description: SITE_CONFIG.description,
 }
+
+// ... (existing imports)
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body {...bodyAttributes} className="relative min-w-[300px] bg-white" data-mobile-menu="closed" data-scrolled="up">
+
         <MotionWrapper>
           <DesktopCursor />
           <ViewTransitions />
@@ -72,7 +76,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             />
             <Analytics />
           </>
-        )}
+        )
+        }
       </body>
     </html>
   )

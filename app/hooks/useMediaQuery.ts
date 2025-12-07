@@ -1,19 +1,25 @@
 // hooks/useMediaQuery.ts
 "use client"
-import { useSyncExternalStore } from "react"
+import { useState, useEffect } from "react"
 import { getMediaQueryStore } from "../utils/getMediaQueryStore"
 
 // Generic hook: pass any valid media query string
 export function useMediaQuery(query: string) {
   const store = getMediaQueryStore(query)
-  return useSyncExternalStore(
-    (cb) => {
-      store.subs.add(cb)
-      return () => store.subs.delete(cb)
-    },
-    () => store.isMatch,
-    () => false // SSR snapshot
-  )
+  const [isMatch, setIsMatch] = useState(false) // Always start false to match server
+
+  useEffect(() => {
+    // Only update to actual value on client
+    setIsMatch(store.isMatch)
+
+    const onChange = () => setIsMatch(store.isMatch)
+    store.subs.add(onChange)
+    return () => {
+      store.subs.delete(onChange)
+    }
+  }, [store])
+
+  return isMatch
 }
 
 // Convenience shims mirroring your API

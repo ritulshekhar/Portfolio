@@ -1,4 +1,4 @@
-import profilePhoto from "../images/profile.webp"
+import profilePhoto from "@/public/assets/ritul-shekhar-headshot.jpg"
 import clsx from "clsx"
 import { Text, Typography } from "../ui/Elements"
 import { AnimatedH2 } from "./ui/AnimatedH2"

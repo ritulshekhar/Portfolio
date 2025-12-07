@@ -1,4 +1,6 @@
 import Link from "next/link"
+import Image from "next/image"
+import instagramLogo from "@/public/assets/instagram-logo.jpg"
 import { Icon } from "./Icon"
 import clsx from "clsx"
 import type { Variants } from "motion"
@@ -58,7 +60,11 @@ export const Socials: React.FC<{
             aria-label={link.icon}
             title={link.icon}
           >
-            <Icon name={link.icon} height={15} width={15} className="text-black" />
+            {link.icon === "instagram" ? (
+              <Image src={instagramLogo} alt="Instagram" width={22} height={22} className={clsx("object-contain", iconClassName)} />
+            ) : (
+              <Icon name={link.icon} height={15} width={15} className="text-black" />
+            )}
           </Link>
         </MotionDiv>
       ))}
