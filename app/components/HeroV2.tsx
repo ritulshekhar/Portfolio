@@ -28,10 +28,8 @@ export const HeroV2 = () => {
             </AnimatedElement>
           </h1>
 
-          <AnimatedElement element="p" delay={0.6} className="max-w-xl text-sm leading-snug tracking-tight text-slate-700 md:max-w-2xl md:pr-4 md:text-base">
-            <strong className="font-semibold text-slate-900">AI/ML & Data Science developer</strong> focused on intelligent systems and data-driven solutions.
-            <br className="mb-2 block" />
-            I also build the web experiences that bring these models to life, combining strong backend engineering with modern frontend skills in React & Next.js. Passionate about innovation, performance, and products that make an impact.
+          <AnimatedElement element="p" delay={0.6} className="max-w-xl text-lg leading-snug tracking-tight text-slate-700 md:max-w-2xl md:pr-4 md:text-xl">
+            Deploying ML models, crafting performant backends, and building polished frontends using modern frameworks.
           </AnimatedElement>
 
           <CallToActionButton />

@@ -1,7 +1,7 @@
 export const DOMAIN_URL = "https://www.ritulshekhar.com"
 
 export const SITE_CONFIG = {
-  title: "Ritul Shekhar - Web Developer Portfolio",
+  title: "Ritul Shekhar",
   description: "Portfolio of Ritul Shekhar, a software engineer.",
   url: DOMAIN_URL ?? "http://localhost:3000",
   siteName: "Ritul Shekhar",
@@ -42,7 +42,7 @@ export const SITE_NAP = {
 
 export const SITE_SLUGS = {
   home: "/",
-  projects: "/projects",
+  projects: "/#projects",
   contact: "/#contact",
   about: "/#about",
   projectLinks: {
