@@ -2,12 +2,16 @@ import { StaticImageData } from "next/image"
 import iaoPreview from "@/app/images/iao-preview-v2.webp"
 import bespokePreview from "@/app/images/bespoke-preview-v2.webp"
 import automedicsPreview from "@/app/images/automedics-preview-v2.webp"
-import complianceAiPreview from "@/public/assets/compliance-ai-preview-v2.jpg"
-import marketResearchPreview from "@/public/assets/market-research-dashboard.png"
+import complianceAiPreview from "@/public/assets/compliance-ai-v4.jpg"
+import marketResearchPreview from "@/public/assets/market-research-dashboard-v2.jpg"
 import cloudFeedbackPreview from "@/public/assets/cloud-feedback-platform-v2.jpg"
-import stockForecastingPreview from "@/public/assets/stock-forecasting.png"
+import stockForecastingPreview from "@/public/assets/stock-forecasting-v2.png"
 import crimeDetectionPreview from "@/public/assets/crime-detection.jpg"
 import reactZeroUIPreview from "@/app/images/react-zero-ui-preview.jpg"
+
+import smartAttendancePreview from "@/public/assets/smart-attendance.jpg"
+
+import customerChatbotPreview from "@/public/assets/customer-chatbot.jpg"
 
 // Reusing existing images as placeholders
 const images = [reactZeroUIPreview, bespokePreview, automedicsPreview, iaoPreview]
@@ -32,7 +36,7 @@ export const myProjects: ProjectItem[] = [
         techStack: "Python, CNN, OpenCV",
         type: "Face Recognition",
         color: "#3B06D1",
-        image: images[0],
+        image: smartAttendancePreview,
         href: "", // Insert GitHub Link Here
         dataText: "View on GitHub"
     },
@@ -43,7 +47,7 @@ export const myProjects: ProjectItem[] = [
         techStack: "Python, NLP, Transformers, Azure, REST API",
         type: "Conversational AI",
         color: "#024EFC",
-        image: images[1],
+        image: customerChatbotPreview,
         href: "", // Insert GitHub Link Here
         dataText: "View on GitHub"
     },

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body {...bodyAttributes} className="relative min-w-[300px] bg-white" data-mobile-menu="closed" data-scrolled="up">
 
         <MotionWrapper>
